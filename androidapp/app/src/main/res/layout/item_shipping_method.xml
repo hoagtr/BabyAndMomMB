@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:paddingVertical="4dp"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tvShippingMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/gray_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Standard" />
+
+    <TextView
+        android:id="@+id/tvShippingFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:textColor="@color/gray_dark"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvShippingMethod"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="69.420 ₫" />
+
+    <TextView
+        android:id="@+id/lbEstimatedDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/estimated_delivery"
+        android:textColor="@color/gray_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvShippingMethod" />
+
+    <TextView
+        android:id="@+id/tvEstimatedDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/gray_dark"
+        app:layout_constraintBaseline_toBaselineOf="@id/lbEstimatedDelivery"
+        app:layout_constraintStart_toEndOf="@id/lbEstimatedDelivery"
+        tools:text="April 1st, 2049" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/rbSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:button="@drawable/tick_checkbox"
+        android:buttonTint="@color/mint"
+        android:clickable="false"
+        android:focusable="false"
+        android:minWidth="24dp"
+        android:minHeight="24dp"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        app:layout_constraintBaseline_toBaselineOf="@id/lbEstimatedDelivery"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:checked="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

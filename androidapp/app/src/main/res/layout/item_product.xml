@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Hình ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_product" />
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Organic Baby Shampoo" />
+
+    <!-- Giá sản phẩm -->
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:textColor="@color/coral"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="$9.99" />
+
+    <!-- Nút View Details -->
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_view_details" />
+
+</LinearLayout>
